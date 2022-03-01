@@ -88,8 +88,9 @@ header .menu li a:hover{
 .contenido{
     position: relative;
     width: 85%;
-    height: 100%;
+    min-height: 100vh;
     margin: 0px auto;
+    padding: 20px;
 }
 .main_map{
     text-align: center;
@@ -159,6 +160,18 @@ header .menu li a:hover{
 .d-block { /*Mini imagen*/
     height: 60px;
 }
+.footer{
+    background-color: #004ad4;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 250ms;
+}
+
 /*Maquetación móvil*/
 @media (max-width:767px) {
     /*.clearfix{
@@ -202,7 +215,7 @@ header .menu li a:hover{
     /*Contenido principal*/
     .contenido{
         width: 80%;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0px auto;
     }
     .shared_main_titles{
@@ -291,7 +304,7 @@ header .menu li a:hover{
     /*Contenido principal*/
     .contenido{
         width: 90%;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0px auto;
     }
     .shared_main_titles{
