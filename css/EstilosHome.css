@@ -67,16 +67,16 @@ header .menu li a:hover{
     margin: 0px;
 }
 .fixed .menu{
-    justify-content: left;
+    justify-content: right;
     padding: 0px;
     margin: 0px;
 }
 .fixed .menu li{
-    padding: 8px;
+    padding: 5px;
     margin: 0px;
 }
 .fixed .menu li a{
-    padding: 8px;
+    padding: 10px;
     margin: 0px;
 }
 .hide{
