@@ -174,9 +174,18 @@ header .menu li a:hover{
 } 
 .general{
     float: left;
-    padding-top: 1% 0% 0% 1%;
-    width: 24%;
+    padding: 1% 0% 0% 1%;
+    width: 25%;
     text-align: justify;
+}
+.general p{
+    padding: 2%;
+    height: auto;
+    
+}
+.general span{
+    color: #004ad4;
+    font-weight: bold;
 }
 
 /*Footer*/
@@ -210,8 +219,13 @@ header .menu li a:hover{
     color: #ffffff;
     display: flex;
 }
+.footer_content a:hover{
+    text-decoration: underline;
+}
 .footer .copy{
-    margin: 5px;
+    border-top: 1px solid #ffffff;
+    margin: 10px;
+    padding: 10px;
     width: 100%;
 }
 
