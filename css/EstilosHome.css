@@ -87,6 +87,7 @@ header .menu li a:hover{
     cursor: pointer;
     display: none;
     font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
 }
 /*Contenido principal*/
 /*Mapa seleccionable*/
@@ -182,23 +183,20 @@ header .menu li a:hover{
     padding: 2%;
     height: auto;
     animation-name: titulo;
-    animation-duration: 3s;
-    
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
 }
 .general span{
     color: #004ad4;
     font-weight: bold;
 }
 @keyframes titulo{
-    0%{
-        left: 0;
-    }
-    50%{
-        left:  500px;
-    }
-    100%{
-        left: 0;
-    }
+    from{
+        transform: translateX(100%);
+   }
+    to{
+        transform: translateX(0%);
+   }
 }
 /*Footer*/
 .footer{
@@ -239,6 +237,7 @@ header .menu li a:hover{
     margin: 10px;
     padding: 10px;
     width: 100%;
+    text-align: center;
 }
 
 /*Maquetación móvil*/
