@@ -119,7 +119,7 @@ header .menu li a:hover{
     height: auto;
     margin: 0.5%;
     text-align: center;
-    box-shadow: -3px 3px 8px rgb(185, 185, 185); 
+    box-shadow: -3px 4px 8px rgb(185, 185, 185); 
     border-radius: 2%;
 }
 .shared_images{
@@ -181,13 +181,25 @@ header .menu li a:hover{
 .general p{
     padding: 2%;
     height: auto;
+    animation-name: titulo;
+    animation-duration: 3s;
     
 }
 .general span{
     color: #004ad4;
     font-weight: bold;
 }
-
+@keyframes titulo{
+    0%{
+        left: 0;
+    }
+    50%{
+        left:  500px;
+    }
+    100%{
+        left: 0;
+    }
+}
 /*Footer*/
 .footer{
     background-color: #004ad4;
