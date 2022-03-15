@@ -198,6 +198,31 @@ header .menu li a:hover{
         transform: translateX(0%);
    }
 }
+.whatsapp a{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 1;
+    transform: scale(2.5);
+    color: green;
+}
+.whatsapp p{
+    position: fixed;
+    bottom: -10px;
+    left: 15px;
+    z-index: 1;
+    font-size: 6pt;
+    font-weight: bold;
+    color: #000;
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: all 250ms;
+}
+.whatsapp a:hover p{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
 /*Footer*/
 .footer{
     background-color: #004ad4;
@@ -246,6 +271,9 @@ header .menu li a:hover{
         float: none;
         clear: both;
     }*/
+    *{
+        font-size: 14.5pt;
+    }
     header .logo img{
         width: 70%;
         margin: 0 auto;
@@ -282,7 +310,7 @@ header .menu li a:hover{
     
     /*Contenido principal*/
     .contenido{
-        width: 80%;
+        width: 95%;
         min-height: 100vh;
         margin: 0px auto;
     }
@@ -326,6 +354,11 @@ header .menu li a:hover{
     #carouselExampleIndicators{
         width: 100%;
     }
+    .nuevos{
+        padding: 1% 1% 0%;
+        width: 100%;
+        float: none;
+    }
     .carousel-item img{
         width: fit-content;
         height: 210px;
@@ -333,9 +366,47 @@ header .menu li a:hover{
     .d-block { /*Mini imagen*/
         height: 30px;
     }
+    .general{
+        float: none;
+        padding: 1% 0% 0% 1%;
+        width: 100%;
+        text-align: justify;
+    }
+    .whatsapp a{
+        bottom: 30px;
+        left: 30px; 
+    }
+    /*Footer*/
+    .footer_content{
+        width: 100%;
+        float: none;
+        padding: 10px;
+        margin: 10px;
+    }
+    .footer_content a,
+    .footer_content i{
+        text-decoration: none;
+        font-weight: normal;
+        padding: 5px;
+        color: #ffffff;
+        display: flex;
+    }
+    .footer_content a:hover{
+        text-decoration: underline;
+    }
+    .footer .copy{
+        border-top: 1px solid #ffffff;
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
 }
 /*Maquetación tablet*/
 @media (min-width:768px) and  (max-width:1024px) {
+    *{
+        font-size: 16.5pt;
+    }
     header .logo img{
         width: 65%;
         margin: 0 auto;
@@ -371,7 +442,7 @@ header .menu li a:hover{
     }
     /*Contenido principal*/
     .contenido{
-        width: 90%;
+        width: 95%;
         min-height: 100vh;
         margin: 0px auto;
     }
@@ -415,11 +486,57 @@ header .menu li a:hover{
     #carouselExampleIndicators{
         width: 100%;
     }
+    .nuevos{
+        padding: 1% 1% 0%;
+        width: 100%;
+        float: none;
+    }
     .carousel-item img{
         width: fit-content;
         height: 350px;
     }
     .d-block { /*Mini imagen*/
         height: 55px;
+    }
+    .general{
+        float: none;
+        padding: 1% 0% 0% 1%;
+        width: 100%;
+        text-align: justify;
+    }
+    .whatsapp a{
+        bottom: 40px;
+        left: 40px; 
+        transform: scale(3);
+    }
+    .whatsapp p{
+        bottom: -12px;
+        left: 20px;
+        font-size: 7pt;
+    }
+    /*Footer*/
+    .footer_content{
+        width: 100%;
+        float: none;
+        padding: 10px;
+        margin: 10px;
+    }
+    .footer_content a,
+    .footer_content i{
+        text-decoration: none;
+        font-weight: normal;
+        padding: 5px;
+        color: #ffffff;
+        display: initial;
+    }
+    .footer_content a:hover{
+        text-decoration: underline;
+    }
+    .footer .copy{
+        border-top: 1px solid #ffffff;
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
     }
 }
