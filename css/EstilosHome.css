@@ -179,23 +179,27 @@ header .menu li a:hover{
     width: 25%;
     text-align: justify;
 }
-.general p{
+.animado{
     padding: 2%;
     height: auto;
-    animation-name: titulo;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
+    opacity: 0;
+    transition: 250ms;
 }
 .general span{
     color: #004ad4;
     font-weight: bold;
 }
-@keyframes titulo{
+.animado_scroll{
+    animation: animado 1s;
+}
+@keyframes animado{
     from{
         transform: translateX(100%);
+        opacity: 0;
    }
     to{
         transform: translateX(0%);
+        opacity: 1;
    }
 }
 .whatsapp a{
@@ -272,7 +276,7 @@ header .menu li a:hover{
         clear: both;
     }*/
     *{
-        font-size: 14.5pt;
+        font-size: 13.5pt;
     }
     header .logo img{
         width: 70%;
@@ -343,7 +347,7 @@ header .menu li a:hover{
         font-weight: bold;
     }
     .shared_desc{
-        font-size: 12pt;
+        font-size: 13.5pt;
         text-align: justify;
     }
     .for_shared_links{
@@ -475,7 +479,7 @@ header .menu li a:hover{
         font-weight: bold;
     }
     .shared_desc{
-        font-size: 15pt;
+        font-size: 16.5pt;
         text-align: justify;
     }
     .for_shared_links{
@@ -539,4 +543,5 @@ header .menu li a:hover{
         width: 100%;
         text-align: center;
     }
+
 }
